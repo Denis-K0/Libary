@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <img src="/book-open-variant-outline.svg" alt="logo">
+        <p>Bücher zum lesen</p>
+        <button class="addBookBtn">Buch hinzufügen</button>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <p>"Bücher zum lesen" by DK</p>
+    </footer>
+
+    <dialog>
+        <div class="form">
+            <p>Eigenschaften des Buches</p>
+            <label for="title">TITEL</label>
+            <input id="title" type="name" name="title" maxlength="30" required>
+            <label for="author">AUTOR</label>
+            <input id="author" type="name" name="author" maxlength="30" required>
+            <label for="publisher">VERLAG</label>
+            <input id="publisher" type="name" name="publisher" maxlength="30" required>
+            <div class="ContainerInputs">
+                <label for="releaseDate">ERSCHEINUNGSJAHR</label>
+                <label for="pages">SEITEN</label>
+                <input id="releaseDate" type="number" name="releaseDate" max="2100" maxlength="4" required>
+                <input id="pages" type="number" name="pages" max="5000" maxlength="4" required>
+            </div>
+            <div class="btnContainer">
+                <button class="submitBtn" type="none">Hinzufügen</button>
+                <button class="closeBtn" formmethod="dialog">Abbrechen</button>
+            </div>
+        </div>
+    </dialog>
+
+</html>
